@@ -7,6 +7,8 @@ root.render(
   <React.StrictMode> 
   <div>
     <MainBody/>
+    <MainBody/>
+    <MainBody/>
   </div>
   </React.StrictMode>
 );
