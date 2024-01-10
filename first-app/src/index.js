@@ -27,8 +27,12 @@ function MainHeader(){
 }
 function SubHeader(){
   return(
-    <p>This is a subheader.</p>
+    <p style={subHeaderStyle}>This is a subheader.</p>
   );
+}
+const subHeaderStyle={
+  color:"red",
+  backgroundColor:"black"
 }
 function MainBody(){
   return (
@@ -39,7 +43,7 @@ function MainBody(){
 }
 function Footer(){
   return(
-  <p>This is a footer.</p>
+  <p style={{color:"white",backgroundColor:"black"}}>This is a footer.</p>
   );
 }
 
