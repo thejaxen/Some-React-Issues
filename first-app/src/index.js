@@ -14,7 +14,20 @@ root.render(
 );
 function Header(){
   return(
+    <div>
+    <MainHeader/>
+    <SubHeader/>
+    </div>
+  );
+}
+function MainHeader(){
+  return(
     <h1>React Course</h1>
+  );
+}
+function SubHeader(){
+  return(
+    <p>This is a subheader.</p>
   );
 }
 function MainBody(){
