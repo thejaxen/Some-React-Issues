@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import "./CSS/style.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,7 +23,7 @@ function Header(){
 }
 function MainHeader(){
   return(
-    <h1 className="text-primary" >React Course</h1>
+    <h1 className="heading1" >React Course</h1>
   );
 }
 function SubHeader(){
@@ -35,8 +36,16 @@ const subHeaderStyle={
   backgroundColor:"black"
 }
 function MainBody(){
+
+  const firstvariable = "React JS";
+
   return (
     <div> 
+      <p>Creating and using variables like {firstvariable} </p>
+      <ul>
+        <li>Basic Doundation</li>
+        <li>Functional and Class Components</li> 
+      </ul>
       <p>Using functions in rendering.</p>
     </div>
   );
