@@ -22,7 +22,7 @@ function Header(){
 }
 function MainHeader(){
   return(
-    <h1>React Course</h1>
+    <h1 className="text-primary" >React Course</h1>
   );
 }
 function SubHeader(){
