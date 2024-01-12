@@ -37,16 +37,21 @@ const subHeaderStyle={
 }
 function MainBody(){
 
-  const firstvariable = "React JS";
-
+  const firstvariable = "React JS"; //var and let also could be used for declaring variable
+  const lecturenumber = "3";
+  const lecture = "New lecture is ";
+  const lehrer = "English";
   return (
     <div> 
       <p>Creating and using variables like {firstvariable} </p>
+      <p>Total lecture: {lecturenumber}</p>
+      <div>{lecture} {lehrer}</div>
       <ul>
         <li>Basic Doundation</li>
         <li>Functional and Class Components</li> 
       </ul>
       <p>Using functions in rendering.</p>
+
     </div>
   );
 }
