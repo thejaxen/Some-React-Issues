@@ -51,7 +51,7 @@ function MainBody(){
         <li>Functional and Class Components</li> 
       </ul>
       <p>Using functions in rendering.</p>
-
+      <div>Enter task: <input maxLength={4} readOnly={false} placeholder='Mert'></input> </div>
     </div>
   );
 }
