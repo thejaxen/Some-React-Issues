@@ -9,10 +9,23 @@ root.render(
   <div>
     <Header/>
     <MainBody/>
+    <Students/>
     <Footer/>
   </div>
   </React.StrictMode>
 );
+
+function Students(){
+  const fullName = "Kris Walley";
+  co
+  return (
+    <div className="container p-4">
+      <div className="row">Students enrolled.</div>
+    </div>
+  );
+}
+
+
 function Header(){
   return(
     <div>
