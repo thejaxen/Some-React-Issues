@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./CSS/style.css";
 import Header from "./header";
+import Students from "./students";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,25 +16,6 @@ root.render(
   </div>
   </React.StrictMode>
 );
-
-function Students(){
-  const fullName = "Kris Walley";
-  const programingExp = 2;
-  return (
-    <div className="container p-4">
-      <div className="row">Students enrolled.</div>
-      <div className="row border">
-        <div className="col-1">
-          <img className="w-100" src={'https://ui-avatars.com/api/?name=${fullName}'}></img>
-        </div>
-        <div className="col-10">
-          {fullName}<br></br>
-          Programming Experience {programingExp} years
-        </div>
-      </div>
-    </div>
-  );
-}
 
 
 function MainBody(){
