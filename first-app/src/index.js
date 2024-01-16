@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./CSS/style.css";
+import Header from "./header";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -35,30 +36,7 @@ function Students(){
 }
 
 
-function Header(){
-  return(
-    <div>
-    <MainHeader/>
-    <SubHeader/>
-    </div>
-  );
-}
-function MainHeader(){
-  return(
-    <h1 className="heading1" >React Course</h1>
-  );
-}
-function SubHeader(){
-  return(
-    <p style={subHeaderStyle}>This is a subheader.</p>
-  );
-}
-const subHeaderStyle={
-  color:"red",
-  backgroundColor:"black"
-}
 function MainBody(){
-
   const firstvariable = "React JS"; //var and let also could be used for declaring variable
   const lecturenumber = "3";
   const lecture = "New lecture is ";
@@ -77,6 +55,7 @@ function MainBody(){
     </div>
   );
 }
+
 function Footer(){
   return(
   <p style={{color:"white",backgroundColor:"black"}}>This is a footer.</p>
