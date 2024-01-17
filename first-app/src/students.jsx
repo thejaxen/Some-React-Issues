@@ -1,6 +1,5 @@
-function Students(){
-    const fullName = "Kris Walley";
-    const programingExp = 2;
+function Students(props){
+    
     return (
       <div className="container p-4">
         <div className="row">Students enrolled.</div>
@@ -9,8 +8,8 @@ function Students(){
             <img className="w-100" src={'https://ui-avatars.com/api/?name=${fullName}'}></img>
           </div>
           <div className="col-10">
-            {fullName}<br></br>
-            Programming Experience {programingExp} years
+            {props.name}<br></br>
+            Programming Experience {props.Experience} years
           </div>
         </div>
       </div>

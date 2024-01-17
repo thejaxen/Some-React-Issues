@@ -4,19 +4,19 @@ import "./CSS/style.css";
 import Header from "./header";
 import Students from "./students";
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode> 
   <div>
     <Header/>
     <MainBody/>
-    <Students/>
+    <Students Experience={2} name="Mert Duyar"/>
+    <Students Experience={5} name="Resul Özkale"/>
+    <Students Experience={7} name="Murat Koç"/>
     <Footer/>
   </div>
   </React.StrictMode>
 );
-
 
 function MainBody(){
   const firstvariable = "React JS"; //var and let also could be used for declaring variable
@@ -43,9 +43,6 @@ function Footer(){
   <p style={{color:"white",backgroundColor:"black"}}>This is a footer.</p>
   );
 }
-
-
-
 
 
 //REACT-STRICTMODE SHOWS US THE POSİİBLE ERRORS AND EXCEPTİONs.
