@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import "./CSS/style.css";
 import Header from "./header";
 import Students from "./students";
+import faker from "@faker-js/faker";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
