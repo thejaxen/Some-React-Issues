@@ -10,8 +10,8 @@ function Header(){
   }
   function MainHeader(){
     return(
-      <div>
-        <img src={background}></img>
+      <div className= "pt-3 p1-2"   style={{backgroundColor:"white"}}>
+        <img src={background} style={{height:"35px",verticalAlign:"top"}}></img>
         <h1 className="heading1" >React Course</h1>
       </div>
     );
