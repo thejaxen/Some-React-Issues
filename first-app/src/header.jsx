@@ -1,3 +1,5 @@
+import background from "./images/background.png";
+
 function Header(){
     return(
       <div>
@@ -8,7 +10,10 @@ function Header(){
   }
   function MainHeader(){
     return(
-      <h1 className="heading1" >React Course</h1>
+      <div>
+        <img src={background}></img>
+        <h1 className="heading1" >React Course</h1>
+      </div>
     );
   }
   function SubHeader(){
