@@ -11,6 +11,7 @@ root.render(
   <div>
     <Header/>
     <MainBody/>
+    <div className="container row"></div>
     <Students Experience={2} name="Mert Duyar"/>
     <Students Experience={5} name="Resul Özkale"/>
     <Students Experience={7} name="Murat Koç"/>

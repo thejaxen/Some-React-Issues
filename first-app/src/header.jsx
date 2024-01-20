@@ -1,18 +1,19 @@
-import background from "./images/background.png";
+import background from "./images/logo.png";
 
 function Header(){
     return(
       <div>
       <MainHeader/>
+      <p></p>
       <SubHeader/>
       </div>
     );
   }
   function MainHeader(){
     return(
-      <div className= "pt-3 p1-2"   style={{backgroundColor:"white"}}>
+      <div className="d-flex justify-content-center"  style={{backgroundColor:"white"}}>
         <img src={background} style={{height:"35px",verticalAlign:"top"}}></img>
-        <h1 className="heading1" >React Course</h1>
+        <span style={{backgroundColor:"white",color:"cyan"}}>React Course</span> 
       </div>
     );
   }
@@ -23,7 +24,7 @@ function Header(){
   }
   const subHeaderStyle={
     color:"red",
-    backgroundColor:"black"
+    backgroundColor:"white"
   }
 
   export default Header;
