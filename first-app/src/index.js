@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./CSS/style.css";
-import Header from "./header";
+import Header from "./Header";
+import Footer from "./Footer";
 import Students from "./students";
 import faker from "@faker-js/faker";
 
@@ -40,11 +41,7 @@ function MainBody(){
   );
 }
 
-function Footer(){
-  return(
-  <p style={{color:"white",backgroundColor:"black"}}>This is a footer.</p>
-  );
-}
+
 
 
 //REACT-STRICTMODE SHOWS US THE POSİİBLE ERRORS AND EXCEPTİONs.
