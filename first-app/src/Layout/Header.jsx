@@ -1,4 +1,4 @@
-import background from "./images/logo.png";
+import background from "../images/logo.png";
 
 function Header(){
     return(
@@ -19,7 +19,7 @@ function Header(){
   }
   function SubHeader(){
     return(
-      <p style={subHeaderStyle}>This is a subheader.</p>
+      <p className="text-center" style={subHeaderStyle}>This is a subheader.</p>
     );
   }
   const subHeaderStyle={
