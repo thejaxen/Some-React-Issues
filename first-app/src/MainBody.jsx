@@ -1,5 +1,5 @@
-import Students from "./students";
-import StudentReview from "./StudentReview";
+import Students from "./Components/students";
+import StudentReview from "./Components/StudentReview";
 
 function MainBody(){
     const firstvariable = "React JS"; //var and let also could be used for declaring variable
