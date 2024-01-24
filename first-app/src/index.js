@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import "./CSS/style.css";
 import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
-import MainBody from "./MainBody";
-import Students from "./students";
+import MainBody from "./Layout/MainBody";
+import Students from "./Layout/students";
 import faker from "@faker-js/faker";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

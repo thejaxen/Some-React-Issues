@@ -1,4 +1,5 @@
 import Students from "./students";
+import StudentReview from "./StudentReview";
 
 function MainBody(){
     const firstvariable = "React JS"; //var and let also could be used for declaring variable
@@ -16,10 +17,24 @@ function MainBody(){
         </ul>
         <p>Using functions in rendering.</p>
         <div>Enter task: <input maxLength={4} readOnly={false} placeholder='Mert'></input> </div>
+        <div>Students enroll</div>
         <div className="container row">
-          <Students Experience={2} name="Mert Duyar"/>
-          <Students Experience={5} name="Resul Özkale"/>
-          <Students Experience={7} name="Murat Koç"/>
+          
+          <Students 
+            Experience={2} 
+            name="Mert Duyar">
+              <StudentReview/>
+            </Students>
+          
+          <Students 
+            Experience={5} 
+            name="Resul Özkale">
+              <StudentReview/>
+          </Students>
+          
+          <Students 
+            Experience={7} 
+            name="Murat Koç"/>
           </div>
       </div>
 
