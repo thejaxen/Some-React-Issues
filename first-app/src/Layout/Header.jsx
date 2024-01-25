@@ -1,6 +1,6 @@
 import background from "../images/logo.png";
 
-function Header(){
+const Header = () => {
     return(
       <div>
       <MainHeader/>

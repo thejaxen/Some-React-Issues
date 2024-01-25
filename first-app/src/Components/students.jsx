@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 
-function Students(props){
+const Students = (props) => {
     
     return (
       <div className="col-4 p-4">
