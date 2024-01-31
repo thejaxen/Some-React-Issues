@@ -1,7 +1,9 @@
 import Students from "./Components/students";
 import StudentReview from "./Components/StudentReview";
+import React from "react";
 
-function MainBody(){
+class MainBody extends React.Component{
+  render(){
     const firstvariable = "React JS"; //var and let also could be used for declaring variable
     const lecturenumber = "3";
     const lecture = "New lecture is ";
@@ -39,6 +41,7 @@ function MainBody(){
       </div>
 
     );
+  }
   }
 
 export default MainBody;
