@@ -5,7 +5,6 @@ class Students extends React.Component {
     render() {
     return (
       <div className="col-4 p-4">
-        
         <div className="row border">
           <div className="col-2">
             <img className="w-100 py-2" src={faker.image.avatar()}></img>
