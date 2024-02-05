@@ -9,14 +9,14 @@ const Header = () => {
         </div>
     );
 }
-
 function MainHeader(){
     return(
         <div>
+            
+            <span style={{backgroundColor:"white",color:"cyan",fontWeight:"bold",fontSize:"20px",textAlign:"center"}}>
             <img src={logo} style={{height:"40px",verticalAlign:"top"}}></img>
-            <span style={{backgroundColor:"black",color:"cyan"}}>React Countopedia</span>
+                React Course - Countopedia</span>
         </div>
     );
 }
-
 export default Header;

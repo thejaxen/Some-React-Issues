@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from "./Header";
+import Counter from "./Counter";
 
 
 
@@ -9,6 +10,7 @@ root.render(
   <React.StrictMode>
     <div>
     <Header/>
+    <Counter/>
     </div>
   </React.StrictMode>
 );
