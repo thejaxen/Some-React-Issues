@@ -1,21 +1,27 @@
 import React from 'react';
 
 class Counter extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            count:0,
+        };
+    }
     handleAttack(){
         alert("Attack clicked");
     }
-    defendAttack(){
+    handleDefence(){
         alert("Defend clicked");
     }
     render(){
         return(
             <div className="row">
                 <h1>
-                    Counter:
+                    Counter:{this.state.count}
                 </h1>
                 <button onClick={this.handleAttack} style={{width:"200px"}}>+1</button>
                 <p></p>
-                <button onClicik={this.defendAttack} style={{width:"200px"}}>-1</button>
+                <button onClick={this.handleDefence} style={{width:"200px"}}>-1</button>
             </div>
         );
     }
