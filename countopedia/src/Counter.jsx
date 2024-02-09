@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import attack from "./attack.png";
 import defend from "./defend.png";
@@ -6,7 +7,8 @@ class Counter extends React.Component{
     constructor(props){
         super(props);
         this.handleAttack = this.handleAttack.bind(this);
-        this.handleDefence=this.handleDefence.bind(this);
+        this.handleDefence = this.handleDefence.bind(this);
+        this.resetGame = this.resetGame.bind(this);
         this.state = {
             count:0,
         };
@@ -19,9 +21,15 @@ class Counter extends React.Component{
         });
     }
     handleDefence(){
-     this.setState((previousState) => {
-        return{count: this.state.count - 1,};
+        this.setState((previousState) => {
+        return{count: previousState.count - 1,};
      });   
+    }
+
+    resetGame(){
+        this.setState((previousState) => {
+           return{count: previousState.count = 0,}; 
+        });
     }
     
     render(){
@@ -50,7 +58,7 @@ class Counter extends React.Component{
                 <div className="col-12 col-md-4 offset-md-4">
                 <button className="btn btn-secondary w-100 mt-2">Random Play</button>
                 <br></br>
-                <button className="btn btn-warning w-100 mt-2">Reset</button>
+                <button className="btn btn-warning w-100 mt-2" onClick={this.resetGame}>Reset</button>
                 </div>   
             </div>
         );
