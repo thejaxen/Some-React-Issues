@@ -37,12 +37,16 @@ class Counter extends React.Component{
                 <img style ={{
                     width:"100px",
                     cursor:"pointer",
-                    border: "1px solid green",}}  className="p-4 rounded" src={attack} onClick={this.handleAttack}
+                    border: "4px solid red",}}  className="p-4 rounded" src={attack} onClick={this.handleAttack}
                 ></img>
-                </div>
-                <button onClick={this.handleAttack} style={{width:"200px"}}>+1</button>
-                <p></p>
-                <button onClick={this.handleDefence} style={{width:"200px"}}>-1</button>    
+                </div> 
+                <div className="col-6 col-md-3 offset-md-0">
+                <img style ={{
+                    width:"100px",
+                    cursor:"pointer",
+                    border: "4px solid blue",}}  className="p-4 rounded" src={defend} onClick={this.handleDefence}
+                ></img>
+                </div>   
             </div>
         );
     }
