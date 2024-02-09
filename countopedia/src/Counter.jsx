@@ -46,6 +46,11 @@ class Counter extends React.Component{
                     cursor:"pointer",
                     border: "4px solid blue",}}  className="p-4 rounded" src={defend} onClick={this.handleDefence}
                 ></img>
+                </div>
+                <div className="col-12 col-md-4 offset-md-4">
+                <button className="btn btn-secondary w-100 mt-2">Random Play</button>
+                <br></br>
+                <button className="btn btn-warning w-100 mt-2">Reset</button>
                 </div>   
             </div>
         );
