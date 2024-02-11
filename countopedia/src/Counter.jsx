@@ -3,33 +3,49 @@ import React from 'react';
 import attack from "./attack.png";
 import defend from "./defend.png";
 
+
 class Counter extends React.Component{
     constructor(props){
         super(props);
         this.handleAttack = this.handleAttack.bind(this);
         this.handleDefence = this.handleDefence.bind(this);
-        this.resetGame = this.resetGame.bind(this);
+        this.resetGame = this.resetGame.bind(this);   
+        this.handleRandomPlay = this.handleRandomPlay.bind(this);
+
         this.state = {
             count:0,
         };
     }
-    handleAttack(){
+    handleAttack=()=>{
         this.setState((previousState) => {
+            let newCount = previousState.count - Math.round(Math.random()*10);
             return{
-                count: previousState.count + 1,
+                count: newCount,
             };
         });
     }
-    handleDefence(){
+    handleDefence=()=>{
         this.setState((previousState) => {
-        return{count: previousState.count - 1,};
+            let newCount = previousState.count + Math.round(Math.random() * 10);
+        return{
+            count: newCount,
+        };
      });   
     }
 
-    resetGame(){
+    resetGame=()=>{
         this.setState((previousState) => {
            return{count: previousState.count = 0,}; 
         });
+    }
+    
+    handleRandomPlay=()=>{
+        let playMode = Math.round(Math.random());
+        if(playMode == 0){
+            this.handleAttack();
+        } else {
+            this.handleDefence();
+        }
     }
     
     render(){
@@ -56,9 +72,9 @@ class Counter extends React.Component{
                 ></img>
                 </div>
                 <div className="col-12 col-md-4 offset-md-4">
-                <button className="btn btn-secondary w-100 mt-2">Random Play</button>
+                <button className="btn btn-secondary w-100 mt-2" onClick={this.handleRandomPlay} > Random Play </button>
                 <br></br>
-                <button className="btn btn-warning w-100 mt-2" onClick={this.resetGame}>Reset</button>
+                <button className="btn btn-warning w-100 mt-2" onClick={this.resetGame} > Reset </button>
                 </div>   
             </div>
         );
