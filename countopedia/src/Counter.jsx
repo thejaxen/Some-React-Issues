@@ -9,11 +9,12 @@ class Counter extends React.Component{
         super(props);
         this.handleAttack = this.handleAttack.bind(this);
         this.handleDefence = this.handleDefence.bind(this);
-        this.resetGame = this.resetGame.bind(this);   
-        this.handleRandomPlay = this.handleRandomPlay.bind(this);
+
 
         this.state = {
             count:0,
+            lastPlay: "",
+            gameStatus: "",
         };
     }
     handleAttack=()=>{
@@ -21,6 +22,8 @@ class Counter extends React.Component{
             let newCount = previousState.count - Math.round(Math.random()*10);
             return{
                 count: newCount,
+                lastPlay:"Attack",
+                gameStatus: newCount > -10 ? "You Won!!" : previousState.gameStatus,
             };
         });
     }
@@ -29,13 +32,19 @@ class Counter extends React.Component{
             let newCount = previousState.count + Math.round(Math.random() * 10);
         return{
             count: newCount,
+            lastStatus: "Defence",
+            gameStatus: newCount < +10 ? "You Loose!!" : previousState.gameStatus,
         };
      });   
     }
 
     resetGame=()=>{
         this.setState((previousState) => {
-           return{count: previousState.count = 0,}; 
+           return{
+            count: previousState.count = 0,
+            gameStatus: "",
+            lastPlay:"",
+            }; 
         });
     }
     
@@ -47,7 +56,8 @@ class Counter extends React.Component{
             this.handleDefence();
         }
     }
-    
+
+
     render(){
         return(
             <div className="row text-center">
@@ -55,8 +65,8 @@ class Counter extends React.Component{
                     Game Score:{this.state.count}
                 </h1>
                 <p>You win at +20 points and lose at -20 points</p>
-                <p>Last Play :</p>
-                <h3>Game Status :</h3>
+                <p>Last Play : {this.state.lastPlay}</p>
+                <h3>Game Status : {this.state.gameStatus}</h3>
                 <div className="col-6 col-md-3 offset-md-3"> 
                 <img style ={{
                     width:"100px",
