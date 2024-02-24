@@ -9,8 +9,6 @@ class Counter extends React.Component{
         super(props);
         this.handleAttack = this.handleAttack.bind(this);
         this.handleDefence = this.handleDefence.bind(this);
-
-
         this.state = {
             count:0,
             lastPlay: "",
