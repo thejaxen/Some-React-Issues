@@ -1,7 +1,9 @@
 const Addcontact = () => {
-    return (
-        <div style={{color:"gray", marginTop:"10px",borderTop:"1px solid #555",textAlign:"center"}} >
-            Bye bye...
+    return(
+        <div>
+            <button className = "btn btn-danger form-control">
+                Add Contact
+            </button>
         </div>
     );
 };
